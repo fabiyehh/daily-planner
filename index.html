@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Planner</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Daily Planner</h1>
+
+        <div class="task-form">
+            <input type="text" id="task-input" placeholder="Add a new task..." required>
+            <select id="priority-select">
+                <option value="low">Low Priority</option>
+                <option value="medium">Medium Priority</option>
+                <option value="high">High Priority</option>
+            </select>
+            <input type="text" id="category-input" placeholder="Category (e.g., Work, Personal)">
+            <button id="add-task-btn">Add Task</button>
+        </div>
+
+        <div class="filters">
+            <input type="text" id="filter-category-input" placeholder="Filter by category...">
+            <select id="filter-priority-select">
+                <option value="all">All Priorities</option>
+                <option value="high">High Priority</option>
+                <option value="medium">Medium Priority</option>
+                <option value="low">Low Priority</option>
+            </select>
+        </div>
+
+        <ul id="task-list">
+            <!-- Tasks will be injected here by JavaScript -->
+        </ul>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
